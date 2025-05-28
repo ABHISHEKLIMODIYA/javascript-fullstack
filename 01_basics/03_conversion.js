@@ -1,21 +1,3 @@
-"use strict";//treat all js code as newer version
-// alert(3/3) // we are use node js not browser
-//number =>2**53
-//bigint
-//string
-//boolean
-//null=>standalone value
-//undefined=>
-//symbol-> unique
-
-
-
-//object
-
-
-
-
-
 let score="hh33"
 let s="33"
 let n =null
@@ -63,3 +45,4 @@ console.log(bool2);
 //"" false
 //" " true
 //"abhi" true
+

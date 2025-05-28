@@ -11,4 +11,3 @@ console.log(accountEmail);
 /*  prefer not to use var
 bcz issue un block and functional scope*/
 console.table([accountId,accountPassword,accountEmail,accountState]);
-
