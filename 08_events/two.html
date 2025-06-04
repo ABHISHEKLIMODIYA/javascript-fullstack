@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="stop">Strop</button>
+
+    
+</body>
+<script> 
+//this function browser ke through milte h not core js function ->setimout setinterval,clearinterval clear timeout,
+
+setTimeout(function(){
+    console.log("abhishek");
+    
+},3000)//2000 time out h
+//set time interval->interval chahiye then continuosly do executing
+//set timeout ->ek bar hi task execute karta
+const sayAbhi=function(){
+    console.log("abhishek");}
+
+setTimeout(sayAbhi,4000)
+const changeText=function(){
+    document.querySelector('h1').innerHTML="best js Series"
+}
+const changeme=setTimeout(changeText,5000)
+document.querySelector("#stop")
+.addEventListener("click",function () {
+    clearTimeout(changeme)
+    console.log('stopped');
+    
+}
+)
+
+</script>
+</html>  

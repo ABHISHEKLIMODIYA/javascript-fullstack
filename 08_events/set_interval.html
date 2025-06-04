@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+    
+    
+
+    
+</body>
+<script>
+const sayname=function(str){
+    console.log(str,Date.now());
+    console.log("good morning yrr");
+    
+    
+}
+let text;
+const start=function(){
+    if(!text){
+
+
+        text= setInterval(sayname,1000,"hiii")
+        console.log("start");}
+    
+}
+const end =function(){
+    clearInterval(text)
+    text=null
+    console.log("stop");
+    
+
+}
+document.getElementById('start').addEventListener('click',start)
+document.querySelector('#stop').addEventListener('click',end)
+
+
+</script>
+</html>

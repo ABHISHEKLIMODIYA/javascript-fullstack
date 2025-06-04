@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+//javascript me events squetially run hote hai
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html events</title>
+</head>
+<body ><script>
+    //javascript me jitne bhi events h wo sequentially run hote hai
+    //type of event,defaultprevented,target,toElement
+    //clientX,scereernX
+    //altkey,shiftkey,keycode
+    //event propogation->event bubbling and event capturing
+    //event bubbling,default->false se ho hai---buttom to up jata h
+document.getElementById('id name').addEventListener('click',function (e){
+    console.log(e);
+    e.stopPropogation()
+    
+},false)
+//capturing mode first parent then child mtlb 1st class ka accwss hod then teacher ofsub
+
+</script>
+
+
+</body>
+</html>
